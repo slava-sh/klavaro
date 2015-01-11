@@ -99,15 +99,14 @@ img {
 header {
   width:270px;
   float:left;
-  position:fixed;
 }
 
 header ul {
   list-style:none;
   height:40px;
-  
+
   padding:0;
-  
+
   background: #eee;
   background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
@@ -115,7 +114,7 @@ header ul {
   background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
   background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
   background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  
+
   border-radius:5px;
   border:1px solid #d2d2d2;
   box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;
@@ -185,53 +184,43 @@ footer {
 }
 
 @media print, screen and (max-width: 960px) {
-  
-  div.wrapper {
-    width:auto;
-    margin:0;
+
+  body {
+    padding:30px;
   }
-  
+
+  .wrapper {
+    width:660px;
+  }
+
+  section, footer {
+    width:360px;
+  }
+}
+
+@media print, screen and (max-width: 720px) {
+
+  body {
+    word-wrap:break-word;
+  }
+
   header, section, footer {
     float:none;
     position:static;
     width:auto;
   }
-  
+
   header {
-    padding-right:320px;
+    padding:0;
   }
-  
+
   section {
     border:1px solid #e5e5e5;
     border-width:1px 0;
     padding:20px 0;
     margin:0 0 20px;
   }
-  
-  header a small {
-    display:inline;
-  }
-  
-  header ul {
-    position:absolute;
-    right:50px;
-    top:52px;
-  }
-}
 
-@media print, screen and (max-width: 720px) {
-  body {
-    word-wrap:break-word;
-  }
-  
-  header {
-    padding:0;
-  }
-  
-  header ul, header p.view {
-    position:static;
-  }
-  
   pre, code {
     word-wrap:normal;
   }
@@ -240,10 +229,6 @@ footer {
 @media print, screen and (max-width: 480px) {
   body {
     padding:15px;
-  }
-  
-  header ul {
-    display:none;
   }
 }
 
@@ -260,4 +245,5 @@ footer {
           transform:scale(0.635);
   -webkit-transform-origin:0 0;
           transform-origin:0 0;
+  height:557px;
 }
