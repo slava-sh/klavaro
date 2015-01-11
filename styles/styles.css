@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,300,700);
+
+h1, h2, h3, h4, h5, h6 {
+  color:#222;
+  margin:0 0 10px;
+  padding-top:10px;
+}
+
+p, ul, ol {
+  margin:0 0 10px;
+}
+
+h1 {
+  font-size:28px;
+}
+
+a {
+  color:#39c;
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+strong {
+  color:#222;
+}
+
+img {
+  max-width:100%;
+}
+
+/* 960 = 50 + 270 + 90 + 500 + 50 */
+
+body {
+  font:18px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#777;
+  padding:50px;
+}
+
+.wrapper {
+  width:860px;
+  margin:0 auto;
+}
+
+header {
+  width:270px;
+  float:left;
+  height:100%;
+}
+
+section {
+  width:500px;
+  float:right;
+  clear:right;
+}
+
+footer {
+  width:860px;
+  float:right;
+  position:fixed;
+  bottom:20px;
+  text-align:right;
+}
+
+footer p {
+  font-size:14px;
+  margin-bottom:5px;
+}
+
+@media print, screen and (max-width: 960px) {
+
+  /* 720 = 30 + 270 + 30 + 360 + 30 */
+
+  body {
+    padding:30px;
+  }
+
+  .wrapper, footer {
+    width:660px;
+  }
+
+  section {
+    width:360px;
+  }
+}
+
+@media print, screen and (max-width: 720px) {
+
+  body {
+    word-wrap:break-word;
+  }
+
+  .wrapper, header, section, footer {
+    float:none;
+    position:static;
+    width:auto;
+  }
+
+  footer {
+    text-align: left;
+    border-top:1px solid #e5e5e5;
+    border-width:1px 0;
+    padding-top: 10px;
+    margin-top: 30px;
+  }
+}
+
+@media print, screen and (max-width: 480px) {
+  body {
+    padding:15px;
+  }
+}
+
+@media print {
+  body {
+    padding:0.4in;
+    font-size:12pt;
+    color:#444;
+  }
+}
+
+#iphone {
+  -webkit-transform:scale(0.635);
+          transform:scale(0.635);
+  -webkit-transform-origin:0 0;
+          transform-origin:0 0;
+  height:557px;
+}
