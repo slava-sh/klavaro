@@ -177,8 +177,9 @@ hr {
 }
 
 footer {
-  width:270px;
-  float:left;
+  width:860px;
+  margin-left:360px;
+  float:right;
   position:fixed;
   bottom:50px;
 }
@@ -252,4 +253,11 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+#iphone {
+  -webkit-transform:scale(0.635);
+          transform:scale(0.635);
+  -webkit-transform-origin:0 0;
+          transform-origin:0 0;
 }
