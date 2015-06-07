@@ -31,7 +31,7 @@ img {
   display:block;
 }
 
-/* 960 = 50 + 270 + 90 + 500 + 50 */
+/* 960 = 45 + 320 + 60 + 500 + 45 */
 
 body {
   font:18px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -39,13 +39,13 @@ body {
   padding:20px 0;
 }
 
-.wrapper {
-  width:860px;
+.wrapper, footer {
+  width:880px;
   margin:0 auto;
 }
 
 header {
-  width:270px;
+  width:320px;
   float:left;
   height:100%;
 }
@@ -58,7 +58,6 @@ section {
 }
 
 footer {
-  width:860px;
   float:right;
   position:fixed;
   bottom:20px;
@@ -72,18 +71,27 @@ footer p {
 
 @media print, screen and (max-width: 960px) {
 
-  /* 720 = 30 + 270 + 30 + 360 + 30 */
+  /* 720 = 5 + 320 + 30 + 360 + 5 */
 
   body {
-    padding:30px;
+    padding:0 5px;
   }
 
   .wrapper, footer {
-    width:660px;
+    width:710px;
   }
 
   section {
     width:360px;
+  }
+
+  footer {
+    float:none;
+    position:static;
+    width:auto;
+    text-align: left;
+    margin:0;
+    margin-left:30px;
   }
 }
 
@@ -127,7 +135,7 @@ footer p {
           transform:scale(0.75);
   -webkit-transform-origin:0 0;
           transform-origin:0 0;
-  height:557px;
+  height:660px;
 }
 
 #appstore {
