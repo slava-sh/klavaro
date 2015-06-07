@@ -121,8 +121,8 @@ footer p {
 }
 
 #iphone {
-  -webkit-transform:scale(0.635);
-          transform:scale(0.635);
+  -webkit-transform:scale(0.75);
+          transform:scale(0.75);
   -webkit-transform-origin:0 0;
           transform-origin:0 0;
   height:557px;
