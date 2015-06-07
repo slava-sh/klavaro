@@ -2,11 +2,11 @@
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
-  margin:0 0 10px;
+  margin:0 0 6px;
 }
 
 p, ul, ol {
-  margin:0 0 10px;
+  margin:0;
 }
 
 h1 {
@@ -35,7 +35,7 @@ img {
 body {
   font:18px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
-  padding:50px;
+  padding:20px 0;
 }
 
 .wrapper {
@@ -53,6 +53,11 @@ section {
   width:500px;
   float:right;
   clear:right;
+  margin-bottom:10px;
+}
+
+#appstore {
+  margin: 10px 0;
 }
 
 footer {
@@ -65,7 +70,7 @@ footer {
 
 footer p {
   font-size:14px;
-  margin-bottom:5px;
+  margin-bottom:0;
 }
 
 @media print, screen and (max-width: 960px) {
