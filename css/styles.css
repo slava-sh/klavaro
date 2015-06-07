@@ -133,3 +133,7 @@ footer p {
 #appstore {
   margin-top: 10px;
 }
+
+.likely .paypal {
+    background: transparent;
+}
