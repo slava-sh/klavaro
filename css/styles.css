@@ -28,6 +28,7 @@ strong {
 
 img {
   max-width:100%;
+  display:block;
 }
 
 /* 960 = 50 + 270 + 90 + 500 + 50 */
@@ -54,10 +55,6 @@ section {
   float:right;
   clear:right;
   margin-bottom:10px;
-}
-
-#appstore {
-  margin: 10px 0;
 }
 
 footer {
@@ -131,4 +128,8 @@ footer p {
   -webkit-transform-origin:0 0;
           transform-origin:0 0;
   height:557px;
+}
+
+#appstore {
+  margin-top: 10px;
 }
