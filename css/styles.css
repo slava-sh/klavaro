@@ -26,7 +26,6 @@ strong {
 
 img {
   max-width:100%;
-  display:block;
 }
 
 /* 960 = 45 + 320 + 60 + 500 + 45 */
@@ -136,22 +135,23 @@ footer p {
   height:660px;
 }
 
-#appstore {
+#iphone img {
+  display:block;
+}
+
+#actions {
   margin-top:10px;
 }
 
 #appstore img {
-  width:170px;
+  width:166px;
+}
+
+.paypal {
+  display:inline;
+  margin-left:14px;
 }
 
 .likely {
-  margin-top: 16px;
-}
-
-.likely .paypal {
-    background:transparent;
-}
-
-.likely .paypal input[type="image"] {
-    vertical-align:middle;
+  margin-top:14px;
 }
